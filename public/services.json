@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "name": "Paralysis Disability",
+    "comment": "When something disrupts nerve signals to muscles, you may experience paralysis — being unable to make voluntary movements. Common causes of paralysis include strokes, spinal cord injuries and nerve disorders like multiple sclerosis. Bell’s palsy causes temporary facial paralysis. Paraplegia involves both legs, while quadriplegia affects all limbs",
+    "img": "https://i.ibb.co/0t8mtZc/service-1.png",
+    "price": "$299.99"
+  },
+  {
+    "id": "2",
+    "name": "Brain Disability",
+    "comment": "The two major types of treatment for mental disorders are medication and psychotherapy. Different methods work better for different conditions. Many people find that a combination of the two is the most effective.",
+    "img": "https://i.ibb.co/8Pk8mtf/service-2.png",
+    "price": "$399.99"
+  },
+  {
+    "id": "3",
+    "name": "Medical Service",
+    "comment": "Medical service means any medical treatment or any medical, chiropractic, ambulances, or other related services; drugs, medicine, crutches, prosthetic appliances, braces, and supports; and where necessary, physical restorative services.",
+    "img": "https://i.ibb.co/PYQDbbb/service-3.png",
+    "price": "$249.99"
+  },
+  {
+    "id": "4",
+    "name": "Emergency Service",
+    "comment": "Emergency Medical Services, more commonly known as EMS, is a system that provides emergency medical care. Once it is activated by an incident that causes serious illness or injury, the focus of EMS is emergency medical care of the patient(s).",
+    "img": " https://i.ibb.co/51QbRfq/service-4.png",
+    "price": "$200.99"
+  },
+  {
+    "id": "5",
+    "name": "Body Checkup Service ",
+    "comment": "A complete body check-up is a scan of the entire body including kidney, heart, and lung to assess the health condition. It includes urine tests, Electrocardiography (ECG), stool tests, X-rays, Dental checkups, blood tests, and scans based on gender and age.",
+    "img": "https://i.ibb.co/QjDpzz0/service-5.png",
+    "price": "$349.99"
+  },
+  {
+    "id": "6",
+    "name": "Tablet Paralysis",
+    "comment": "Aconite napellus is considered as the sovereign remedy for almost every species of paralysis in homoepathy. Gelsemium sempervirens (Gels.) is another plant used in homeopathic for treatment of paralysis.",
+    "img": "https://i.ibb.co/fv53R2G/service-6.png",
+    "price": "$99.99"
+  }
+]
