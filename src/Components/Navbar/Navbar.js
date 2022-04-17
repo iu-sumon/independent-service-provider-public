@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import CustomLink from '../CustomLink/CustomLink';
 import { MenuIcon, XIcon } from '@heroicons/react/solid'
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
+import { signOut } from 'firebase/auth';
 const Navbar = () => {
+    const [user] = useAuthState(auth)
     const [open, setOpen] = useState(false)
     return (
         <nav className='md:mr-20'>
@@ -15,7 +19,8 @@ const Navbar = () => {
                 <CustomLink to='/services'>Services</CustomLink>
                 <CustomLink to='/blogs'>Blogs</CustomLink>
                 <CustomLink to='/about'>About</CustomLink>
-                <CustomLink to='/login'>Login</CustomLink>
+              { user ? <CustomLink onClick={()=>signOut(auth)}  to='/login'>SignOut</CustomLink> :
+                <CustomLink to='/login'>Login</CustomLink>}
 
             </div>
 
