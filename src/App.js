@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import About from "./Components/About/About";
 import Blogs from "./Components/Blogs/Blogs";
 import CheckOut from "./Components/CheckOut/CheckOut";
+import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import Home from "./Components/Home/Home";
 import Login from "./Components/Login/Login";
@@ -32,6 +33,7 @@ function App() {
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
         <Route path='*' element={<NotFound></NotFound>} />
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }

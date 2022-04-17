@@ -8,14 +8,14 @@ import auth from '../../firebase.init';
 import Loading from '../Loading/Loading';
 
 const SignUp = () => {
-    
+
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [confirmPassword, setConfirmPassword] = useState('')
     const [userError, setUserError] = useState('')
 
-    const [createUserWithEmailAndPassword, createUser, loading, createError] = useCreateUserWithEmailAndPassword(auth);
+    const [createUserWithEmailAndPassword, createUser, loading, createError] = useCreateUserWithEmailAndPassword(auth, { emailVerificationOptions: true });
     const [updateProfile, updating, updatingError] = useUpdateProfile(auth);
     const navigate = useNavigate()
     let getError;
@@ -75,7 +75,7 @@ const SignUp = () => {
                         <div className="flex items-start">
                             <div className="flex items-start">
                                 <div className="flex items-center h-5">
-                                    <input  id="remember" aria-describedby="remember" type="checkbox" className="w-4 h-4 bg-gray-50 rounded border border-gray-300 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800" required />
+                                    <input id="remember" aria-describedby="remember" type="checkbox" className="w-4 h-4 bg-gray-50 rounded border border-gray-300 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800" required />
                                 </div>
                                 <div className="ml-3 text-sm">
                                     <label htmlFor="terms" className="font-medium text-gray-900 dark:text-gray-300">I agree with the terms and conditions</label>
@@ -86,7 +86,7 @@ const SignUp = () => {
                             <p className='text-red-600 text-center'>{getError}</p>
 
                         </div>
-                        <button  type="submit" className="w-full text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">SignUp</button>
+                        <button type="submit" className="w-full text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">SignUp</button>
                         <div className="text-sm font-medium text-gray-500 dark:text-gray-300 text-center pb-5">
                             Already have an account?<Link to="/login" className="text-blue-700 hover:underline dark:text-blue-500 pl-2">Please Login</Link>
                         </div>
