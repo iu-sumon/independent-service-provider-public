@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import CustomLink from '../CustomLink/CustomLink';
 import { MenuIcon, XIcon } from '@heroicons/react/solid'
-import { useAuthState } from 'react-firebase-hooks/auth';
+import { useAuthState} from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import { signOut } from 'firebase/auth';
+ 
 const Navbar = () => {
     const [user] = useAuthState(auth)
     const [open, setOpen] = useState(false)
+  
+   
     return (
         <nav className='md:mr-20'>
 
