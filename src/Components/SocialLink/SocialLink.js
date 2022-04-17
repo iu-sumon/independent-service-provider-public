@@ -6,8 +6,7 @@ import { useSignInWithFacebook, useSignInWithGoogle } from 'react-firebase-hooks
 import { useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import Loading from '../Loading/Loading';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+ 
 const SocialLink = () => {
     const [signInWithGoogle, googleUser, googleLoading, googleError] = useSignInWithGoogle(auth);
     const [signInWithFacebook, facebookUser, facebookLoading, facebookError] = useSignInWithFacebook(auth);
@@ -39,7 +38,7 @@ const SocialLink = () => {
                 <img onClick={() => signInWithFacebook()} src={facebook} alt="" />
             </div>
 
-            <ToastContainer></ToastContainer>
+             
         </div>
     );
 };

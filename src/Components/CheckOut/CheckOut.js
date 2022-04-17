@@ -36,7 +36,9 @@ const CheckOut = () => {
                         <label htmlFor="floating_company" className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Company (Ex. Google)</label>
                     </div>
                 </div>
-                <button  className="py-3 px-20 block  bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  mr-2 mb-2 text-md font-bold text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700  ">Check Out</button>
+               <div className='text-center'>
+               <button  className="py-3 px-20 mx-auto bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  mr-2 mb-2 text-md font-bold text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700  ">Check Out</button>
+               </div>
             </form>
           
         </div>
