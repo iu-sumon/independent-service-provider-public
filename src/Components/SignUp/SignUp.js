@@ -6,8 +6,7 @@ import signupPhoto from '../../images/other/signup.jpg'
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import Loading from '../Loading/Loading';
-
-const SignUp = () => {
+ const SignUp = () => {
 
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
@@ -15,7 +14,7 @@ const SignUp = () => {
     const [confirmPassword, setConfirmPassword] = useState('')
     const [userError, setUserError] = useState('')
 
-    const [createUserWithEmailAndPassword, createUser, loading, createError] = useCreateUserWithEmailAndPassword(auth, { emailVerificationOptions: true });
+    const [createUserWithEmailAndPassword, loading, createError] = useCreateUserWithEmailAndPassword(auth, { emailVerificationOptions: true });
     const [updateProfile, updating, updatingError] = useUpdateProfile(auth);
     const navigate = useNavigate()
     let getError;
@@ -27,9 +26,7 @@ const SignUp = () => {
     if (createError || updatingError) {
         getError = <p>Error:{createError?.message} {updatingError?.message}</p>
     }
-    if (createUser) {
-        console.log(createUser);
-    }
+     
 
     const handleSignUp = async (event) => {
         event.preventDefault()
@@ -92,6 +89,7 @@ const SignUp = () => {
                         </div>
                     </form>
                     <SocialLink></SocialLink>
+                    
                 </div>
 
             </div>
