@@ -8,7 +8,7 @@ const Banner = () => {
         <div className='bg-[#E4FAFF] md:h-[500px]'>
             <div className='flex justify-center items-center h-48'>
                 <div>
-                    <p className='md:text-5xl text-xl text-center mb-3 font-mono'>Best Health Care For Your Family</p>
+                    <p className='md:text-5xl text-xl text-center mb-3 font-semibold'>Best Health Care For Your Family</p>
                     <p className='md:text-xl text-center'>I will help you to feel better and enjoy every single day of your life.may be the fastest growing health</p>
                 </div>
             </div>
