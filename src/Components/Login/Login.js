@@ -36,10 +36,10 @@ const Login = () => {
 
         if (email) {
             await sendPasswordResetEmail(email);
-            toast('Sent email');
+            toast('Thanks for your request.Please check your email');
         }
         else {
-            toast('Please Send Your Address')
+            toast('Please send your email address')
         }
 
     }
