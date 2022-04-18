@@ -16,7 +16,7 @@ const SocialLink = () => {
         return <Loading></Loading>
     }
     if (googleUser || facebookUser) {
-        navigate('/')
+        navigate('/checkout')
     }
     let getError;
     if (googleError || facebookError) {
