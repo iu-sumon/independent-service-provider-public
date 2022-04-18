@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "name": "Neil Sims",
+    "comment": "Patients need to understand that residents are not full-fledged doctors, even though they have MD or DO next to their names. Residents are still students, receiving on-the-job training, practicing on real patients with real medical problems. Most residents work in hospitals.",
+    "img": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3wxNzI5MjU4fHxlbnwwfHx8fA%3D%3D&w=1000&q=80",
+    "ratings": "5/5"
+  },
+  {
+    "id": "2",
+    "name": "Bonnie Green",
+    "comment": "I really happy his treatment. I did highly recommend that doctor. It felt personal and intimate like having lunch with an old friend from way back. It was definitely raw, but it was tempered with honesty and he offered no excuses. I can completely respect that.",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_mq2fxSxNL4Qu5E0UKj2qSbl7BCzI9K6HFPQiupmVqHepUY8_peEkqw0hkwb65d6zF_E&usqp=CAU ",
+    "ratings": "4/5"
+  },
+  {
+    "id": "3",
+    "name": "Michael Gough",
+    "comment": "To become licensed as a specialist, these new doctors still have many more years of study to go, depending on their chosen specialty. For example, to be a general internist, a doctor may study for three more years. To be a neurologist may require six or seven more years.",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHUKHc-U2iz8PU-iAI2ZI7mAHbQw_5P0MqOl5hzBYbZKTxwt4H2Itdt6lHznKxn8xm2ho&usqp=CAU ",
+    "ratings": "5/5"
+  }
+]
