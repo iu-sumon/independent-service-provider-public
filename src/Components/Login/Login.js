@@ -49,12 +49,12 @@ const Login = () => {
    }
     return (
         <div className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'>
-            <h1 className='text-4xl text-center text-white  pt-3'>Welcome to Login Page</h1>
-            <div className='py-20 flex justify-evenly items-center'>
-                <div>
-                    <img className='rounded-lg shadow-md  md:w-[460px] md:h-[470px]' src={loginPhoto} alt="" />
+            <h1 className='md:text-4xl text-2xl text-center text-white  pt-3'>Welcome to Login Page</h1>
+            <div className='md:py-20 pt-5 grid md:grid-cols-2  md:justify-center '>
+                <div className='md:order-1 order-2 '>
+                    <img className='md:rounded-lg md:shadow-md  md:w-[460px]  md:h-[470px] mx-auto' src={loginPhoto} alt="" />
                 </div>
-                <div className="p-4 md:w-[460px] md:h-[470px] bg-white rounded-lg border border-gray-200 shadow-md sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700">
+                <div className=" md:p-4 md:w-[460px]  md:h-[470px]  bg-white md:rounded-lg border border-gray-200 md:shadow-md  dark:bg-gray-800 dark:border-gray-700 md:order-2 order-1">
                     <form>
                         <h5 className="text-xl font-medium text-gray-900 dark:text-white text-center">Please Login</h5>
                         <div>
