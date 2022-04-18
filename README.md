@@ -22,4 +22,4 @@ A list of technologies used within the project:
 * This site is secure ! that's why Patient or Customer can booked any service without information lost.
 * This site's  also design and develop for disability's man.
 * We provide best service for patient.
-* Patient can easily share there;s review we appreciate this !
+ 
