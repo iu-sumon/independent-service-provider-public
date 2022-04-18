@@ -9,7 +9,7 @@ const About = () => {
                   </div>
                   <div className='md:mr-20 text-white md:shadow-xl p-5 md:rounded-2xl md:order-2 order-1'>
                       <h1 className='text-center text-4xl pb-5'>Destination</h1>
-                      <p className='text-xl'>This is Sumon. My first goal is to complete this course adequately. At the same time, I will  prepare myself for the job. In sha Allah, After getting the job, I would like to keep abreast of the latest technology as well as prepare for the IELTS and GRE. Above all, my goal is to prepare myself for getting the opportunity to work in a big tech giant company.</p>
+                      <p className='text-xl'>This is Sumon.I have completed my graduation under the Department of Computer Science and Engineering from Islamic University,Kushtia. My first goal is to complete this course adequately. At the same time, I will  prepare myself for the job. In sha Allah, After getting the job, I would like to keep abreast of the latest technology as well as prepare for the IELTS and GRE. Above all, my goal is to prepare myself for getting the opportunity to work in a big tech giant company.</p>
                   </div>
              </div>
         </div>
