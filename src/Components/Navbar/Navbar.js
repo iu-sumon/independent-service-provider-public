@@ -20,6 +20,7 @@ const Navbar = () => {
 
                 <CustomLink to='/'>Home</CustomLink>
                 <CustomLink to='/services'>Services</CustomLink>
+                <CustomLink to='/review'>Reviews</CustomLink>
                 <CustomLink to='/blogs'>Blogs</CustomLink>
                 <CustomLink to='/contact'>Contact</CustomLink>
                 <CustomLink to='/about'>About</CustomLink>
