@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { async } from '@firebase/util';
 import { Link, useNavigate } from 'react-router-dom';
 import SocialLink from '../SocialLink/SocialLink';
 import signupPhoto from '../../images/other/signup.jpg'

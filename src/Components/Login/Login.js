@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { async } from '@firebase/util';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
@@ -8,45 +7,42 @@ import Loading from '../Loading/Loading';
 import SocialLink from '../SocialLink/SocialLink';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
 const Login = () => {
-    
+
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
-    const [signInWithEmailAndPassword, user,loading,signInError] = useSignInWithEmailAndPassword(auth);
-    
+    const [signInWithEmailAndPassword, user, loading, signInError] = useSignInWithEmailAndPassword(auth);
+
     const [sendPasswordResetEmail, sending, resetError] = useSendPasswordResetEmail(auth);
-   
-    
+
+
     const location = useLocation()
     const from = location.state?.from?.pathname || "/";
 
     const navigate = useNavigate()
-    if(user)
-    {
+    if (user) {
         navigate(from, { replace: true });
     }
-    
-    if(loading||sending)
-    {
+
+    if (loading || sending) {
         return <Loading></Loading>
     }
     let getError;
-   if(signInError || resetError )
-   {
-       getError=<p>Error:{signInError?.message} {resetError?.message}</p>
-   }
-   const handleResetPassword = async ()=>{
+    if (signInError || resetError) {
+        getError = <p>Error:{signInError?.message} {resetError?.message}</p>
+    }
+    const handleResetPassword = async () => {
 
-       if(email)
-       {
-        await sendPasswordResetEmail(email);
-        toast('Sent email');
-       }
-       else{
-           toast('Please Send Your Address')
-       }
-    
-   }
+        if (email) {
+            await sendPasswordResetEmail(email);
+            toast('Sent email');
+        }
+        else {
+            toast('Please Send Your Address')
+        }
+
+    }
     return (
         <div className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'>
             <h1 className='md:text-4xl text-2xl text-center text-white  pt-3'>Welcome to Login Page</h1>
